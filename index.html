@@ -75,12 +75,32 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+        <div class="about-carousel-wrap">
+          <div class="about-carousel" id="aboutCarousel" aria-label="About me photos">
+            <div class="about-carousel-track" id="aboutCarouselTrack">
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-1.JPG" alt="About me" class="about-carousel-img" />
+              </div>
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-2.jpg" alt="About me" class="about-carousel-img" />
+              </div>
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-3.jpg" alt="About me" class="about-carousel-img" />
+              </div>
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-4.JPG" alt="About me" class="about-carousel-img" />
+              </div>
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-5.jpg" alt="About me" class="about-carousel-img" />
+              </div>
+              <div class="about-carousel-slide">
+                <img src="./assets/about-me-image-6.JPG" alt="About me" class="about-carousel-img" />
+              </div>
+            </div>
+            <button type="button" class="about-carousel-arrow about-carousel-prev" id="aboutCarouselPrev" aria-label="Previous photo">&lsaquo;</button>
+            <button type="button" class="about-carousel-arrow about-carousel-next" id="aboutCarouselNext" aria-label="Next photo">&rsaquo;</button>
+            <div class="about-carousel-dots" id="aboutCarouselDots" aria-hidden="true"></div>
+          </div>
         </div>
         <div class="about-details-container">
           <div class="about-containers">
