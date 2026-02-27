@@ -20,8 +20,23 @@
     display: flex;
   }
   #experience,
-  .experience-details-container {
+  .experience-details-container,
+  .experience-stacked {
     margin-top: 2rem;
+  }
+  .experience-stacked {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .language-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .language-years {
+    text-align: left;
+  }
+  .work-entry-header {
+    flex-wrap: wrap;
   }
   #profile,
   .section-container {

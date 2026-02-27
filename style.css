@@ -318,6 +318,219 @@ section {
 
 #experience {
   position: relative;
+  height: auto;
+  min-height: 96vh;
+  padding-bottom: 6rem;
+}
+
+.experience-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-block {
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  padding: 1.75rem 2rem;
+}
+
+.experience-block-title {
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.15rem solid rgb(200, 200, 200);
+}
+
+/* Languages – experience bars */
+.language-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.language-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-bar-wrap {
+  background: rgb(230, 230, 230);
+  border-radius: 0.5rem;
+  height: 1.25rem;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.language-bar {
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: width 0.5s ease;
+}
+
+.language-python { background: linear-gradient(90deg, #3776ab, #ffd43b); }
+.language-java { background: linear-gradient(90deg, #ed8b00, #ffffff); }
+.language-html { background: linear-gradient(90deg, #e34f26, #f06529); }
+.language-cpp { background: linear-gradient(90deg, #00599c, #659ad2); }
+.language-css { background: linear-gradient(90deg, #264de4, #2965f1); }
+
+.language-name {
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+  min-width: 4rem;
+}
+
+.language-years {
+  font-size: 0.9rem;
+  color: rgb(85, 85, 85);
+  min-width: 4.5rem;
+  text-align: right;
+}
+
+/* Frameworks – colored bubbles */
+.tech-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-bubble {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #4a6fa5, #2d4a6f);
+}
+
+.tech-bubble:nth-child(2n) { background: linear-gradient(135deg, #5a9c6a, #2d6b3d); }
+.tech-bubble:nth-child(3n) { background: linear-gradient(135deg, #c17a4a, #8b5a2b); }
+.tech-bubble:nth-child(4n) { background: linear-gradient(135deg, #7b68a5, #4a3d6b); }
+.tech-bubble:nth-child(5n) { background: linear-gradient(135deg, #c75a6a, #8b3a4a); }
+
+/* Work experience */
+.work-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.work-entry {
+  padding-bottom: 1.75rem;
+  border-bottom: 0.1rem solid rgb(220, 220, 220);
+}
+
+.work-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.work-entry-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.work-org-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  background: rgb(248, 248, 248);
+  padding: 0.2rem;
+}
+
+.work-entry-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.work-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  margin-bottom: 0.2rem;
+}
+
+.work-org {
+  font-size: 0.95rem;
+  color: rgb(85, 85, 85);
+  margin-bottom: 0.2rem;
+}
+
+.work-dates-loc {
+  font-size: 0.85rem;
+  color: rgb(120, 120, 120);
+}
+
+.work-subprojects {
+  margin-top: 0.75rem;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  border-left: 0.15rem solid rgb(200, 200, 200);
+}
+
+.work-subproject {
+  margin-bottom: 1rem;
+}
+
+.work-subproject:last-child {
+  margin-bottom: 0;
+}
+
+.work-subproject-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.work-client-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  border-radius: 0.35rem;
+  flex-shrink: 0;
+  background: rgb(248, 248, 248);
+  padding: 0.15rem;
+}
+
+.work-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+  margin-bottom: 0.2rem;
+}
+
+.work-sub-dates {
+  font-size: 0.85rem;
+  color: rgb(120, 120, 120);
+  margin-bottom: 0.4rem;
+}
+
+.work-bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.work-bullets li {
+  margin-bottom: 0.35rem;
 }
 
 .experience-sub-title {
@@ -371,8 +584,14 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 1rem 0.25rem;
   color: black;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  color: rgb(85, 85, 85);
+  margin: 0 1rem 0.75rem;
 }
 
 .project-btn {
