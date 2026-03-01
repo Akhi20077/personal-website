@@ -5,6 +5,20 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+// Rotating / fading words in hero section
+(function initRotatingWords() {
+  const wrap = document.querySelector(".rotating-words-wrap");
+  if (!wrap) return;
+  const words = wrap.querySelectorAll(".rotating-word");
+  if (words.length === 0) return;
+  let index = 0;
+  setInterval(() => {
+    words[index].classList.remove("active");
+    index = (index + 1) % words.length;
+    words[index].classList.add("active");
+  }, 2500);
+})();
+
 // About section image carousel
 (function initAboutCarousel() {
   const track = document.getElementById("aboutCarouselTrack");
