@@ -16,7 +16,7 @@ function toggleMenu() {
     words[index].classList.remove("active");
     index = (index + 1) % words.length;
     words[index].classList.add("active");
-  }, 2500);
+  }, 2000);
 })();
 
 // About section image carousel
@@ -54,6 +54,9 @@ function toggleMenu() {
   const nextBtn = document.getElementById("aboutCarouselNext");
   if (prevBtn) prevBtn.addEventListener("click", () => setSlide(currentIndex - 1));
   if (nextBtn) nextBtn.addEventListener("click", () => setSlide(currentIndex + 1));
+
+  // Auto-advance carousel
+  setInterval(() => setSlide(currentIndex + 1), 4000);
 
   // Build dots
   for (let i = 0; i < total; i++) {
