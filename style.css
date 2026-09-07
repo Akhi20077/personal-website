@@ -716,6 +716,17 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  object-fit: cover;
+}
+
+#projects .about-containers {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projects .details-container {
+  flex: 1 1 280px;
+  max-width: 400px;
 }
 
 .project-title {
@@ -732,6 +743,15 @@ article .icon {
 .project-achievement {
   color: rgb(48, 105, 78);
   font-weight: 600;
+}
+
+.project-achievement a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.project-achievement a:hover {
+  color: rgb(30, 80, 55);
 }
 
 .project-btn {
