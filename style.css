@@ -729,9 +729,23 @@ article .icon {
   margin: 0 1rem 0.75rem;
 }
 
+.project-achievement {
+  color: rgb(48, 105, 78);
+  font-weight: 600;
+}
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.project-resource-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 12rem;
+  text-decoration: none;
 }
 
 /* CONTACT */

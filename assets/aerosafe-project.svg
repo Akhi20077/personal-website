@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">AeroSafe pilot headset concept</title>
+  <desc id="desc">A pilot headset silhouette with an oxygen monitoring waveform over an aviation-inspired background.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10283d"/>
+      <stop offset="0.58" stop-color="#26536a"/>
+      <stop offset="1" stop-color="#d5a260"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8f0f0" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#6fa7ad" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#07141f" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="54" fill="url(#sky)"/>
+  <circle cx="980" cy="160" r="118" fill="#f3cf91" opacity="0.82"/>
+  <path d="M0 586C210 500 394 516 574 580S942 690 1200 548V800H0Z" fill="#071924" opacity="0.56"/>
+  <path d="M0 636C220 550 410 568 600 628s380 88 600-42" fill="none" stroke="#d9bd89" stroke-width="6" opacity="0.46"/>
+  <g filter="url(#shadow)">
+    <path d="M474 220c-126 0-228 102-228 228v90h64v-90c0-91 73-164 164-164s164 73 164 164v90h64v-90c0-126-102-228-228-228Z" fill="#f1eee5"/>
+    <rect x="214" y="432" width="116" height="194" rx="54" fill="#e4a958"/>
+    <rect x="618" y="432" width="116" height="194" rx="54" fill="#e4a958"/>
+    <path d="M330 412c0-78 63-142 142-142s142 64 142 142v82c0 91-63 166-142 166s-142-75-142-166Z" fill="#17364a"/>
+    <path d="M356 398c12-69 56-108 116-108s105 39 116 108c-32 25-70 38-116 38s-84-13-116-38Z" fill="url(#visor)"/>
+    <path d="M353 497c38 22 78 33 119 33s81-11 119-33c-2 72-51 130-119 130s-117-58-119-130Z" fill="#e7dfd0"/>
+    <path d="M657 552c82 0 118 33 118 90" fill="none" stroke="#f1eee5" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="780" cy="649" r="22" fill="#e4a958"/>
+  </g>
+  <g transform="translate(790 340)">
+    <rect width="310" height="178" rx="30" fill="#f4f0e5" opacity="0.94"/>
+    <path d="M34 95h42l20-44 35 88 32-67 25 45 22-22h66" fill="none" stroke="#bd4937" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="258" cy="44" r="13" fill="#4d8b73"/>
+  </g>
+  <path d="M94 174h188" stroke="#f4f0e5" stroke-width="10" stroke-linecap="round" opacity="0.72"/>
+  <path d="M94 204h120" stroke="#f4f0e5" stroke-width="10" stroke-linecap="round" opacity="0.42"/>
+</svg>
