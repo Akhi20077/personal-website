@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Auesome Reality virtual reality game</title>
+  <desc id="desc">A playful virtual reality headset surrounded by colorful shapes representing an accessible game for children with ASD.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7d8a7"/>
+      <stop offset="0.5" stop-color="#d8ebe0"/>
+      <stop offset="1" stop-color="#a9c9d8"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#406278"/>
+      <stop offset="1" stop-color="#1d3444"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#315063" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="54" fill="url(#background)"/>
+  <circle cx="150" cy="132" r="72" fill="#d67369" opacity="0.82"/>
+  <rect x="966" y="104" width="112" height="112" rx="28" fill="#e6b95f" transform="rotate(14 1022 160)"/>
+  <path d="M102 588c126-72 246-82 360-28s230 58 350-4 226-58 322 4" fill="none" stroke="#f7f0df" stroke-width="26" stroke-linecap="round" opacity="0.65"/>
+  <g fill="none" stroke-linecap="round" opacity="0.72">
+    <path d="M120 296h112" stroke="#4e8b78" stroke-width="18"/>
+    <path d="M176 240v112" stroke="#4e8b78" stroke-width="18"/>
+    <path d="M982 326h110" stroke="#c56b64" stroke-width="18"/>
+    <path d="M1037 271v110" stroke="#c56b64" stroke-width="18"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M374 300c54-74 138-112 226-112s172 38 226 112" fill="none" stroke="#f8f2e7" stroke-width="46" stroke-linecap="round"/>
+    <path d="M328 342c14-65 64-105 131-105h282c67 0 117 40 131 105l34 159c17 80-65 143-135 100l-74-46c-58-36-136-36-194 0l-74 46c-70 43-152-20-135-100Z" fill="url(#visor)"/>
+    <rect x="392" y="325" width="416" height="186" rx="86" fill="#52798d"/>
+    <ellipse cx="500" cy="418" rx="72" ry="58" fill="#b8dbe0"/>
+    <ellipse cx="700" cy="418" rx="72" ry="58" fill="#b8dbe0"/>
+    <circle cx="500" cy="418" r="25" fill="#253f50"/>
+    <circle cx="700" cy="418" r="25" fill="#253f50"/>
+    <path d="M568 468c20 16 44 24 72 24s52-8 72-24" fill="none" stroke="#f4d27d" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g fill="#f8f2e7" opacity="0.9">
+    <circle cx="302" cy="672" r="22"/>
+    <circle cx="354" cy="700" r="13"/>
+    <circle cx="914" cy="668" r="18"/>
+    <circle cx="958" cy="700" r="11"/>
+  </g>
+</svg>
