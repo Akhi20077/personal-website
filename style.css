@@ -719,6 +719,13 @@ article .icon {
   object-fit: cover;
 }
 
+.project-img-screenshot {
+  height: auto;
+  max-height: 22rem;
+  object-fit: contain;
+  background: rgb(18, 18, 18);
+}
+
 #projects .about-containers {
   flex-wrap: wrap;
   justify-content: center;
