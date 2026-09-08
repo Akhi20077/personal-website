@@ -743,10 +743,13 @@ article .icon {
 .project-achievement {
   color: rgb(48, 105, 78);
   font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .project-achievement a {
   color: inherit;
+  text-decoration: underline;
   text-underline-offset: 3px;
 }
 
