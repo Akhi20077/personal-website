@@ -737,10 +737,12 @@ article .icon {
 .project-year {
   font-size: 0.9rem;
   color: rgb(85, 85, 85);
-  margin: 0 1rem 0.75rem;
+  margin: 0 1rem 0.25rem;
 }
 
 .project-achievement {
+  margin: 0 1rem 0.75rem;
+  font-size: 0.9rem;
   color: rgb(48, 105, 78);
   font-weight: 600;
   text-decoration: underline;
@@ -755,6 +757,10 @@ article .icon {
 
 .project-achievement a:hover {
   color: rgb(30, 80, 55);
+}
+
+#projects .btn-container {
+  margin-top: 0.5rem;
 }
 
 .project-btn {
